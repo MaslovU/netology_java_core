@@ -3,6 +3,8 @@ package homework2_stream_api;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.Comparator.comparing;
+
 public class Main {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Jack", "Connor", "Harry", "George", "Samuel", "John", "Yury", "Ivan", "Irina");
@@ -30,7 +32,7 @@ public class Main {
                 .filter(person -> person.getAge() >= 18)
                 .filter(person -> (person.getSex() == Sex.WOMAN && person.getAge() < 55)
                         || (person.getSex() == Sex.MAN && person.getAge() < 60))
-                .sorted(Comparator.comparing(Person::getFamily))
+                .sorted(comparing(Person::getFamily))
                 .collect(Collectors.toList());
         System.out.println(workingPeople);
     }
