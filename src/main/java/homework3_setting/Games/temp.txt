@@ -1,0 +1,13 @@
+Directory src is created
+ Directory main is created
+ File Main is created is created
+ File Utils is created
+ Directory main is created
+ Directory test is created
+ Directory res is created
+ Directory drawables is created
+ Directory vectors is created
+ Directory icons is created
+ Directory savegames is created
+ Directory temp is created
+ File temp is created
