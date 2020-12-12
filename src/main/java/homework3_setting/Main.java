@@ -48,16 +48,14 @@ public class Main {
         forLogs.write(stringLogs);
         forLogs.flush();
 
-        try(FileInputStream fin=new FileInputStream("src/main/java/homework3_setting/Games/temp.txt"))
-        {
+        try (FileInputStream fin = new FileInputStream("src/main/java/homework3_setting/Games/temp.txt")) {
             System.out.printf("File size: %d bytes \n", fin.available());
             int i;
-            while((i=fin.read())!=-1){
-                System.out.print((char)i);
+            while ((i = fin.read()) != -1) {
+                System.out.print((char) i);
             }
             System.out.println();
-        }
-        catch(IOException ex){
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
